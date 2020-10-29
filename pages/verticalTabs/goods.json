@@ -1,0 +1,25 @@
+{
+  "goods": [
+    {
+      "id": 1,
+      "type": "咖啡",
+      "list": [
+        {
+          "goodsId": 1,
+          "name": "摩卡咖啡",
+          "price": 15
+        },
+        {
+          "goodsId": 1,
+          "name": "摩卡咖啡",
+          "price": 15
+        },
+        {
+          "goodsId": 1,
+          "name": "摩卡咖啡",
+          "price": 15
+        }
+      ]
+    }
+  ]
+}

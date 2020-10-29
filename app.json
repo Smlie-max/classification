@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/verticalTabs/verticalTabs",
+    "pages/vertical/vertical",
+    "pages/verticalNav/verticalNav",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

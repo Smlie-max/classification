@@ -1,0 +1,21 @@
+<!--pages/verticalNav/verticalNav.wxml-->
+<view class="container">
+  <!-- 左侧导航栏 -->
+  <!-- scroll-top设置竖向滚动条位置 -->
+  <scroll-view class="vertical-left" scroll-with-animation scroll-y scroll-into-view="left-{{tabCur}}">
+    <view class="left-item {{index==tabCur?'cur':''}}" id="left-{{index}}" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="getTab">
+      Tab-{{item.name}}
+    </view>
+  </scroll-view>
+
+  <!-- 右侧导航栏 -->
+  <!-- scroll-into-view值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素 -->
+  <!-- bindscroll监听滚动条位置触发条件改变左侧导航栏的位置 -->
+  <scroll-view class="vertical-right" scroll-with-animation scroll-y scroll-into-view="right-{{mainCur}}" bindscroll="scroll">
+    <view class="right-item" wx:for="{{list}}" wx:key="index" id="right-{{index}}">
+      <view class="title"> Tab-{{item.name}}</view>
+      <view class="list" wx:for="{{8}}" wx:key="index">项目{{item}}</view>
+    </view>
+
+  </scroll-view>
+</view>
